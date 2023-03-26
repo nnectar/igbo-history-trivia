@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+
+body {
+  background-image: url('https://source.unsplash.com/random?nigeria');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.App {
+  text-align: center;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-heading {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  margin-top: 3.5rem;
+  color: #eae9e9;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  padding: 3rem;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.App-header {
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+.correct-answer {
+  color: #f44336;
+  font-weight: 700;
+}
+
+.correct-message {
+  color: #4caf50;
+  font-weight: 700;
+}
+
+button {
+  background-color: #009688;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #00796b;
+  transform: scale(1.1);
+}
